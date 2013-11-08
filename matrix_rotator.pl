@@ -14,7 +14,7 @@ for (@ref_matrix)
 
 # create two nested loops that simply swap x axis to y axis (x = outer loop, y = inner loop)
 # outer loop will keep looping while first index of first array contains data
-print "to\n";
+print "to:\n";
 while (defined ${$ref_matrix[0]}[0])
 {
 	# assign each reference to $y (in reverse) for each loop 
