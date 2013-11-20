@@ -1,8 +1,8 @@
-matrix_rotator
+Matrix Rotator
 ==============
 
-A creative and easy way to rotate a 2d matrix of any size and shape (90 degree clockwise)
+A creative and easy way in PERL to rotate a 2d matrix of any size and shape (90 degree clockwise)
 
 Algorithm
-1. swap x axis to y axis
-2. loop in reverse through new x axis
+- swap x axis to y axis
+- loop in reverse through new x axis
