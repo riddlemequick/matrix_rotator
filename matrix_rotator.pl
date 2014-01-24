@@ -11,8 +11,7 @@ my @ref_matrix = ( [1,2,3,4] ,
 
 # show original data
 print "from:\n";
-for (@ref_matrix)
-{ for (@{$_}) { print "\t$_"; } print "\n"; }
+for (@ref_matrix) { print "\t@{$_}\n"; }
 
 # create two nested loops that simply swap x axis to y axis (x = outer loop, y = inner loop)
 # outer loop will keep looping while first index of first array contains data
@@ -21,8 +20,9 @@ while (defined ${$ref_matrix[0]}[0])
 {
 	# iterate through array of references (@ref_matrix) in reverse for each loop 
 	# each iteration returns the first element of original x axis and shorten the array by 1 element
+	print "\t";
 	for (reverse @ref_matrix)	  
-	{ print "\t". shift @{$_}; } 
+	{ print shift (@{$_}) . " "; } 
 	print "\n";
 }
 <STDIN>;
